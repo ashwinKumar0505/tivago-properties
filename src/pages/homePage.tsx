@@ -24,6 +24,7 @@ import {
   MAX_PRICE,
 } from "../constants/constants";
 import ImageFallback from "../components/fallbackImage";
+import Footer from "../components/footer";
 
 type TProperty = {
   Title: string;
@@ -89,7 +90,8 @@ const HomePage = () => {
       <Header />
       <Flex
         flex={1}
-        p={10}
+        pt={10}
+        px={10}
         direction="column"
         textAlign="center"
         overflow="scroll"
@@ -254,6 +256,7 @@ const HomePage = () => {
           </Flex>
         )}
       </Flex>
+      <Footer />
     </Flex>
   );
 };

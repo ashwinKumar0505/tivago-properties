@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Header from "../components/header";
 import { AiOutlineHeart, AiOutlineShareAlt, AiFillHome } from "react-icons/ai";
 import ImageFallback from "../components/fallbackImage";
+import Footer from "../components/footer";
 
 const Property = () => {
   const { state } = useLocation();
@@ -36,7 +37,7 @@ const Property = () => {
   return (
     <Flex width="100%" height="100%" direction="column" fontSize="14px">
       <Header />
-      <Flex flex={1} p={10}>
+      <Flex flex={1} p={10} direction="row">
         <Box width="50%">
           <Image
             width="100%"
@@ -205,6 +206,7 @@ const Property = () => {
           </Flex>
         </Box>
       </Flex>
+      <Footer />
     </Flex>
   );
 };
