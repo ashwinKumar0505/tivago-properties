@@ -1,0 +1,122 @@
+[
+	{
+		"Property_id" : "1A",
+		"Name" : "Balu",
+		"Age" : 45,
+		"Sex" : "Male",
+		"Phone_number" : 985423264,
+		"Address" : "10,South car street,MP nagar,Chennai"
+	},
+	{
+		"Property_id" : "1B",
+		"Name" : "Balu",
+		"Age" : 45,
+		"Sex" : "Male",
+		"Phone_number" : 985423264,
+		"Address" : "10,South car street,MP nagar,Chennai"
+	},
+	{
+		"Property_id" : "2A",
+		"Name" : "Ramesh",
+		"Age" : 55,
+		"Sex" : "Male",
+		"Phone_number" : 867541358,
+		"Address" : "15,Narrow street, Jai Nagar,Tripathi"
+	},
+	{
+		"Property_id" : "3A",
+		"Name" : "Suresh",
+		"Age" : 32,
+		"Sex" : "Male",
+		"Phone_number" : 975463215,
+		"Address" : "8,Srinivasa street, Temple nagar,Madurai"
+	},
+	{
+		"Property_id" : "4A",
+		"Name" : "Swetha",
+		"Age" : 41,
+		"Sex" : "Female",
+		"Phone_number" : 956238741,
+		"Address" : "2,Bodi street, Five nagar,Kambam"
+	},
+	{
+		"Property_id" : "4B",
+		"Name" : "Swetha",
+		"Age" : 41,
+		"Sex" : "Female",
+		"Phone_number" : 956238741,
+		"Address" : "2,Bodi street, Five nagar,Kambam"
+	},
+	{
+		"Property_id" : "5A",
+		"Name" : "Kiran",
+		"Age" : 38,
+		"Sex" : "Female",
+		"Phone_number" : 867542163,
+		"Address" : "7,Joseph street, charu nagar,Bangalore"
+	},
+	{
+		"Property_id" : "6A",
+		"Name" : "Benazir",
+		"Age" : 54,
+		"Sex" : "Female",
+		"Phone_number" : 785421693,
+		"Address" : "20,Fazhil street, Ibu nagar,Bangalore"
+	},
+	{
+		"Property_id" : "6B",
+		"Name" : "Benazir",
+		"Age" : 54,
+		"Sex" : "Female",
+		"Phone_number" : 785421693,
+		"Address" : "20,Fazhil street, Ibu nagar,Bangalore"
+	},
+	{
+		"Property_id" : "7A",
+		"Name" : "Gopi",
+		"Age" : 74,
+		"Sex" : "Male",
+		"Phone_number" : 951847623,
+		"Address" : "10,Ezhil street, Devi nagar,Chennai"
+	},
+	{
+		"Property_id" : "8A",
+		"Name" : "Kumar",
+		"Age" : 30,
+		"Sex" : "Male",
+		"Phone_number" : 968574123,
+		"Address" : "5,cross street, Kannagi nagar,Madurai"
+	},
+	{
+		"Property_id" : "8B",
+		"Name" : "Kumar",
+		"Age" : 30,
+		"Sex" : "Male",
+		"Phone_number" : 968574123,
+		"Address" : "5,cross street, Kannagi nagar,Madurai"
+	},
+	{
+		"Property_id" : "9A",
+		"Name" : "Jamu",
+		"Age" : 50,
+		"Sex" : "Female",
+		"Phone_number" : 852469713,
+		"Address" : "6,Thangam streey, cinepolis nagar,Coimbatore"
+	},
+	{
+		"Property_id" : "10A",
+		"Name" : "Ram",
+		"Age" : 29,
+		"Sex" : "Male",
+		"Phone_number" : 856974231,
+		"Address" : "3,Devdoor street, Gopal nagar, Kannur"
+	},
+	{
+		"Property_id" : "10B",
+		"Name" : "Ram",
+		"Age" : 29,
+		"Sex" : "Male",
+		"Phone_number" : 856974231,
+		"Address" : "3,Devdoor street, Gopal nagar, Kannur"
+	}
+]

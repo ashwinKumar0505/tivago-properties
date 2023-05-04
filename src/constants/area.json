@@ -1,0 +1,32 @@
+[
+	{
+		"Location_id" : 1,
+		"NSEW" : "N",
+		"City" : "Bangalore",
+		"Location" : "Jaishankar Nagar"
+	},
+	{
+		"Location_id" : 2,
+		"NSEW" : "S",
+		"City" : "Bangalore",
+		"Location" : "Maruthi Nagar"
+	},
+	{
+		"Location_id" : 3,
+		"NSEW" : "E",
+		"City" : "Bangalore",
+		"Location" : "Poovali Nagar"
+	},
+	{
+		"Location_id" : 4,
+		"NSEW" : "W",
+		"City" : "Bangalore",
+		"Location" : "Kumarasamy Nagar"
+	},
+	{
+		"Location_id" : 5,
+		"NSEW" : "N",
+		"City" : "Bangalore",
+		"Location" : "Surya Nagar"
+	}
+]

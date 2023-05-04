@@ -5,12 +5,12 @@ import {
   Heading,
   Image,
   Text,
-  Spinner,
   MenuButton,
   Menu,
   MenuList,
   MenuItem,
   Icon,
+  Button,
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -25,37 +25,38 @@ import {
 } from "../constants/constants";
 import ImageFallback from "../components/fallbackImage";
 import Footer from "../components/footer";
+import initialProperties from "../constants/property.json"
 
-type TProperty = {
-  Title: string;
-  Bedrooms: number;
-  Price: number;
-  Images: {
-    url: string;
-  }[];
-  _id: string;
+export type TProperty = {
+  Property_id : string,
+  Property_name : string,
+  Rent_or_Price : string,
+  BHK : number,
+  Furnished : string,
+  Floors : number,
+  Bathroom : number,
+  Power_backup : string,
+  Parking : string,
+  Year : number,
+  Area : string,
+  Price : number,
+  Family_or_Bachelor : string,
+  Pet : string,
+  Image_url: string
 };
 
 const HomePage = () => {
-  const [properties, setProperties] = useState<TProperty[]>([]);
+  const [properties, setProperties] = useState<TProperty[]>(initialProperties);
   const [filteredProperties, setFilteredProperties] = useState<TProperty[]>([]);
   const history = useHistory();
-  const [isLoading, setIsLoading] = useState(true);
   const [bedRooms, setBedRooms] = useState(0);
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(1000000);
 
-  useEffect(() => {
-    axios.get(PROPERTY_URL).then((data: any) => {
-      setProperties(data.data);
-      setFilteredProperties(data.data);
-      setIsLoading(false);
-    });
-  }, []);
 
   const propertyClickHandler = (property: TProperty) => {
     history.push({
-      pathname: `/property/${property.Title}`,
+      pathname: `/property/${property.Property_id}`,
       state: {
         property,
       },
@@ -66,7 +67,7 @@ const HomePage = () => {
     const filteredProps = properties.filter((property) => {
       if (bedRooms !== 0) {
         if (
-          property.Bedrooms === bedRooms &&
+          property.BHK === bedRooms &&
           property.Price > minPrice &&
           property.Price < maxPrice
         ) {
@@ -84,6 +85,12 @@ const HomePage = () => {
     });
     setFilteredProperties(filteredProps);
   }, [bedRooms, minPrice, maxPrice]);
+
+  const clearFilters = ()=>{
+    setBedRooms(0);
+    setMinPrice(0);
+    setMaxPrice(1000000);
+  }
 
   return (
     <Flex width="100%" height="100%" direction="column" overflow="hidden">
@@ -183,6 +190,9 @@ const HomePage = () => {
                 </MenuList>
               </Menu>
             </Box>
+            <Button variant="secondary" color="red" onClick={clearFilters}>
+              Clear Filter
+            </Button>
           </Flex>
           <Box>
             <Text fontWeight="semibold" fontSize="14px">
@@ -190,21 +200,7 @@ const HomePage = () => {
             </Text>
           </Box>
         </Flex>
-        {isLoading && (
-          <Flex
-            width="100%"
-            height="100%"
-            alignItems="center"
-            justifyContent="center"
-            direction="column"
-          >
-            <Spinner size="xl" mb={4} />
-            <Text fontSize="22px" fontWeight="600">
-              Loading properties ...
-            </Text>
-          </Flex>
-        )}
-        {!isLoading && filteredProperties.length === 0 && (
+        {filteredProperties.length === 0 && (
           <Flex
             width="100%"
             height="100%"
@@ -223,7 +219,7 @@ const HomePage = () => {
               <Box
                 width="33%"
                 fontSize="14px"
-                key={property._id}
+                key={property.Property_id}
                 marginBottom={10}
                 paddingRight={(index + 1) % 3 === 0 ? 0 : "30px"}
                 onClick={() => propertyClickHandler(property)}
@@ -239,16 +235,16 @@ const HomePage = () => {
                   <Image
                     height="250px"
                     width="100%"
-                    src={property.Images ? property.Images[0]?.url : ""}
+                    src={property.Image_url}
                     mb={6}
                     fallback={<ImageFallback />}
                   />
                   <Box textAlign="center">
-                    <Text mb={3}>{property.Title}</Text>
+                    <Text mb={3} fontWeight="bold" fontSize={18} textTransform="uppercase">{property.Property_name}</Text>
                     <Text mb={3}>
-                      {property.Bedrooms} bedroom apartment for sale
+                      {property.BHK} BHK
                     </Text>
-                    <Text fontWeight="semibold">$ {property.Price}</Text>
+                    <Text fontWeight="semibold">Rs. {property.Price}</Text>
                   </Box>
                 </Box>
               </Box>

@@ -1,0 +1,107 @@
+[
+	{
+		"Location_id" : 1,
+		"Property_id" : "1A",
+		"Property_name" : "Vars Eildon I",
+		"Street" : "1st street",
+		"Address" : "Jaishankar nagar"
+	},
+	{
+		"Location_id" : 1,
+		"Property_id" : "1B",
+		"Property_name" : "Vars Eildon II",
+		"Street" : "2nd street",
+		"Address" : "Jaishankar nagar"
+	},
+	{
+		"Location_id" : 1,
+		"Property_id" : "2A",
+		"Property_name" : "Jai Vilas",
+		"Street" : "2nd street",
+		"Address" : "Jaishankar nagar"
+	},
+	{
+		"Location_id" : 4,
+		"Property_id" : "3A",
+		"Property_name" : "Mango Apartments",
+		"Street" : "1st street",
+		"Address" : "Kumarasamy nagar"
+	},
+	{
+		"Location_id" : 4,
+		"Property_id" : "4A",
+		"Property_name" : "Conclave I",
+		"Street" : "3rd street",
+		"Address" : "Kumarasamy nagar"
+	},
+	{
+		"Location_id" : 4,
+		"Property_id" : "4B",
+		"Property_name" : "Conclave II",
+		"Street" : "2nd street",
+		"Address" : "Kumarasamy nagar"
+	},
+	{
+		"Location_id" : 2,
+		"Property_id" : "5A",
+		"Property_name" : "Sparrow Apartments",
+		"Street" : "1st street",
+		"Address" : "Maruthi nagar"
+	},
+	{
+		"Location_id" : 2,
+		"Property_id" : "6A",
+		"Property_name" : "Majewstic I",
+		"Street" : "1st street",
+		"Address" : "Maruthi nagar"
+	},
+	{
+		"Location_id" : 2,
+		"Property_id" : "6B",
+		"Property_name" : "Majewstic II",
+		"Street" : "7th street",
+		"Address" : "Maruthi nagar"
+	},
+	{
+		"Location_id" : 2,
+		"Property_id" : "7A",
+		"Property_name" : "Accord",
+		"Street" : "9th street",
+		"Address" : "Maruthi nagar"
+	},
+	{
+		"Location_id" : 3,
+		"Property_id" : "8A",
+		"Property_name" : "Major Apartments",
+		"Street" : "4th steet",
+		"Address" : "Poovali nagar"
+	},
+	{
+		"Location_id" : 3,
+		"Property_id" : "8B",
+		"Property_name" : "Major Apartments II",
+		"Street" : "6th steet",
+		"Address" : "Poovali nagar"
+	},
+	{
+		"Location_id" : 5,
+		"Property_id" : "9A",
+		"Property_name" : "Jai Apartments",
+		"Street" : "4th steet",
+		"Address" : "Surya nagar"
+	},
+	{
+		"Location_id" : 5,
+		"Property_id" : "10A",
+		"Property_name" : "Bombay Paradise",
+		"Street" : "3rd steet",
+		"Address" : "Surya nagar"
+	},
+	{
+		"Location_id" : 5,
+		"Property_id" : "10B",
+		"Property_name" : "Bombay Paradise II",
+		"Street" : "4th steet",
+		"Address" : "Surya nagar"
+	}
+]
