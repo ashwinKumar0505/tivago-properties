@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/tivago-properties/static/js/main.c5010994.chunk.js",
-    "main.js.map": "/tivago-properties/static/js/main.c5010994.chunk.js.map",
+    "main.js": "/tivago-properties/static/js/main.06bec385.chunk.js",
+    "main.js.map": "/tivago-properties/static/js/main.06bec385.chunk.js.map",
     "runtime-main.js": "/tivago-properties/static/js/runtime-main.496d3bc9.js",
     "runtime-main.js.map": "/tivago-properties/static/js/runtime-main.496d3bc9.js.map",
-    "static/js/2.011636e4.chunk.js": "/tivago-properties/static/js/2.011636e4.chunk.js",
-    "static/js/2.011636e4.chunk.js.map": "/tivago-properties/static/js/2.011636e4.chunk.js.map",
+    "static/js/2.047295de.chunk.js": "/tivago-properties/static/js/2.047295de.chunk.js",
+    "static/js/2.047295de.chunk.js.map": "/tivago-properties/static/js/2.047295de.chunk.js.map",
     "index.html": "/tivago-properties/index.html",
-    "static/js/2.011636e4.chunk.js.LICENSE.txt": "/tivago-properties/static/js/2.011636e4.chunk.js.LICENSE.txt"
+    "static/js/2.047295de.chunk.js.LICENSE.txt": "/tivago-properties/static/js/2.047295de.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.496d3bc9.js",
-    "static/js/2.011636e4.chunk.js",
-    "static/js/main.c5010994.chunk.js"
+    "static/js/2.047295de.chunk.js",
+    "static/js/main.06bec385.chunk.js"
   ]
 }
