@@ -18,7 +18,6 @@ const Property = () => {
     BHK,
     Furnished,
     Floors,
-    Negotiator,
     Property_id
   } = property as any;
 

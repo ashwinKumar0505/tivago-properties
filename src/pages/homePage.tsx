@@ -12,13 +12,11 @@ import {
   Icon,
   Button,
 } from "@chakra-ui/react";
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import Header from "../components/header";
 import { BsChevronDown } from "react-icons/bs";
 import {
-  PROPERTY_URL,
   BED_ROOMS,
   MIN_PRICE,
   MAX_PRICE,
@@ -46,7 +44,6 @@ export type TProperty = {
 };
 
 const HomePage = () => {
-  const [properties, setProperties] = useState<TProperty[]>(initialProperties);
   const [filteredProperties, setFilteredProperties] = useState<TProperty[]>([]);
   const history = useHistory();
   const [bedRooms, setBedRooms] = useState(0);
@@ -64,7 +61,7 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    const filteredProps = properties.filter((property) => {
+    const filteredProps = initialProperties.filter((property) => {
       if (bedRooms !== 0) {
         if (
           property.BHK === bedRooms &&
